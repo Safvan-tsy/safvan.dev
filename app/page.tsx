@@ -1,8 +1,8 @@
 
 export default function Home() {
   return (
-    <main>
+    <div>
      <h1>Safvan</h1>
-    </main>
+    </div>
   )
 }
