@@ -16,6 +16,7 @@ body {
   color:var(--default-font-color);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   min-height: 100vh;
 }
 main{
