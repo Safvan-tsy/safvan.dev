@@ -6,13 +6,13 @@
   --background-black:rgb(17, 16, 15);
   --component-background:#282c34;
   --default-font-color:aliceblue;
-  --globalfont:"Marche Pro Super", sans-serif;
+  --globalfont:'Times New Roman', serif;
 }
 
 body {
   background-color: var(--background-black);
   padding: 1rem;
-  font-family: var(--globalfont, Inter, Inter Placeholder, sans-serif);
+  font-family: var(--globalfont,sans-serif);
   color:var(--default-font-color);
   display: flex;
   flex-direction: column;
