@@ -3,15 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-black:rgb(17, 16, 15);
+  --component-background:#282c34;
+  --default-font-color:aliceblue;
   --globalfont:"Marche Pro Super", sans-serif;
 }
 
 body {
+  background-color: var(--background-black);
   padding: 1rem;
   font-family: var(--globalfont, Inter, Inter Placeholder, sans-serif);
+  color:var(--default-font-color);
   display: flex;
   flex-direction: column;
   min-height: 100vh;

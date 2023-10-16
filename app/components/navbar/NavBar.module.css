@@ -1,6 +1,41 @@
 .toggleNav{
     display: none;
 }
+.nav{
+    align-self: flex-end;
+    /* height: 40%; */
+    position: fixed; 
+    z-index: 99; 
+    top: 30%; 
+    /*left: 0; */
+    background-color: var(--component-background); 
+    transition: 0.5s; 
+    display: flex;
+    border-radius: 3rem;
+}
+
+.img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.4rem;
+    gap: 1rem;
+    margin: 1rem 0 1rem 0;
+}
+.listItem{
+    padding: 0.4rem;
+    border-radius: 100%;
+    background-color: var(--default-font-color);
+    color: var(--background-black);
+    box-shadow: inset 2px 5px 10px #05050530;
+}
 
 @media (min-width: 640px) {}
 

@@ -12,32 +12,32 @@ import {
 const NavBar = () => {
     return (
         <>
-            <nav className="">
-                <ul className="">
-                    <li className="">
-                        <img src="/favicon.ico" alt="Logo" className="" />
-                    </li>
-                    <li className="">
+            <nav className={styles.nav}>
+                <ul className={styles.list}>
+                    {/* <li className={styles.listItem}>
+                        <img className={styles.img} src="/favicon.ico" alt="Logo" />
+                    </li> */}
+                    <li className={styles.listItem}>
                         <Link href="/page1">
                             <FaHome />
                         </Link>
                     </li>
-                    <li className="">
+                    <li className={styles.listItem}>
                         <Link href="/page2">
                             <FaMedapps />
                         </Link>
                     </li>
-                    <li className="">
+                    <li className={styles.listItem}>
                         <Link href="/page3">
                             <FaGithub />
                         </Link>
                     </li>
-                    <li className="">
+                    <li className={styles.listItem}>
                         <Link href="/page4">
                             <FaTwitter />
                         </Link>
                     </li>
-                    <li className="">
+                    <li className={styles.listItem}>
                         <Link href="/page4">
                             <FaLinkedin />
                         </Link>
