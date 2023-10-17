@@ -46,9 +46,26 @@
     }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    
+    .heading1 {
+        font-size: 3rem;
+    }
+    
+    .heading2 {
+        font-size: 1.5rem;
+    }
+    .image {
+        width: 14rem;
+    }
+}
 
 @media (max-width: 640px) {
+    .hero {
+        flex-direction: column;
+        height: 65vh;
+    }
+    
     .heading1 {
         font-size: 2rem;
     }
