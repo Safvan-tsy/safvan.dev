@@ -1,0 +1,78 @@
+.toggleNav {
+    display: none;
+}
+
+.nav {
+    align-self: flex-end;
+    position: fixed;
+    z-index: 99;
+    background-color: var(--component-background);
+    transition: 0.5s;
+    display: flex;
+    border-radius: 3rem;
+}
+
+.img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.4rem;
+    gap: 1rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.listItem {
+    padding: 0.4rem;
+    border-radius: 100%;
+    background-color: var(--default-font-color);
+    color: var(--background-black);
+    box-shadow: inset 2px 5px 10px #05050530;
+}
+
+
+.listItem:hover {
+    transform: translateY(-2px) translateX(-1px);
+    box-shadow: 1px 2.5px 0 0 black;
+    cursor: pointer;
+  };
+  
+@media (max-width: 640px) {}
+
+@media (max-width: 768px) {
+
+    .nav {
+        align-self: center;
+        bottom: 1%;
+        display: flex;
+        border-radius: 3rem;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0.3rem;
+        gap: 1rem;
+        margin: 0 1rem 0 1rem ;
+    }
+
+    .listItem {
+        padding: 0.3rem;
+    }
+
+}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 1280px) {}
+
+@media (max-width: 1536px) {}

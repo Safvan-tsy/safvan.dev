@@ -3,11 +3,26 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-black:rgb(17, 16, 15);
+  --component-background:#282c34;
+  --default-font-color:aliceblue;
+  --globalfont:'Times New Roman', serif;
 }
 
 body {
+  background-color: var(--background-black);
   padding: 1rem;
+  font-family: var(--globalfont,sans-serif);
+  color:var(--default-font-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+main{
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
 }
