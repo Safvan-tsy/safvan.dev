@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities{
+  .paused{
+    animation-play-state: paused;
+  }
+}
+
 :root {
   --background-black:rgb(17, 16, 15);
   --component-background:#282c34;
