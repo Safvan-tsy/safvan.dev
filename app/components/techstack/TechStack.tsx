@@ -1,6 +1,7 @@
 import * as React from 'react'
 import styles from './TechStack.module.scss'
 import ScrollingLogos from '../ui/scrollingLogos/ScrollingLogos'
+import RightScrollingLogos from '../ui/rightScrolling/RightScrollingLogos'
 
 const TechStack = () => {
   return (
@@ -11,6 +12,7 @@ const TechStack = () => {
       </div>
       <div className={styles.logoGroup}>
         <ScrollingLogos/>
+        <RightScrollingLogos/>
       </div>
       </div>
   )

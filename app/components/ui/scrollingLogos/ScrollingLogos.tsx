@@ -3,8 +3,6 @@ import Image from 'next/image';
 import sass from '../../../assets/tech/sass.svg'
 import js from '../../../assets/tech/javascript.svg'
 import ts from '../../../assets/tech/typescript.svg'
-import nodejs from '../../../assets/tech/nodejs.svg'
-import jest from '../../../assets/tech/jest.svg'
 import css3 from '../../../assets/tech/css3.svg'
 import html5 from '../../../assets/tech/html.svg'
 import handlebars from '../../../assets/tech/handlebars.svg'
@@ -12,28 +10,40 @@ import bootstrap from '../../../assets/tech/bootstrap.svg'
 import react from '../../../assets/tech/react.svg'
 import redux from '../../../assets/tech/redux.svg'
 import yarn from '../../../assets/tech/yarn.svg'
-import npm from '../../../assets/tech/npm.svg'
+import tailwind from '../../../assets/tech/tailwindcss.svg'
 
 const ScrollingLogos = () => {
   return (
-    <div className='flex overflow-hidden space-x-16 group'>
-    <div className='flex  animate-loop-scroll space-x16 group-hover:paused'>
-        <Image src={sass} alt="Image0" className='mx-w-none' loading='lazy' />
-        <Image src={js} alt="Image1" className='mx-w-none' />
-        <Image src={ts} alt="Image2" className='mx-w-none' />
-        <Image src={nodejs} alt="Image3" className='mx-w-none' />
-        <Image src={jest} alt="Image4" className='mx-w-none' />
-        <Image src={bootstrap} alt="Image4" className='mx-w-none' />
-        <Image src={handlebars} alt="Image4" className='mx-w-none' />
-        <Image src={html5} alt="Image4" className='mx-w-none' />
-        <Image src={css3} alt="Image4" className='mx-w-none' />
-        <Image src={react} alt="Image4" className='mx-w-none' />
-        <Image src={redux} alt="Image4" className='mx-w-none' />
-        <Image src={npm} alt="Image4" className='mx-w-none' />
-        <Image src={yarn} alt="Image4" className='mx-w-none' />
-    </div>
-    </div>
-    
+      <div className="flex overflow-hidden space-x-16 group">
+
+        <div className="flex space-x-16 animate-loop-scroll group-hover:paused">
+          <Image loading="lazy" src={tailwind} className="max-w-none" alt="Image 1" />
+          <Image loading="lazy" src={bootstrap} className="max-w-none" alt="Image 2" />
+          <Image loading="lazy" src={ts} className="max-w-none" alt="Image 3" />
+          <Image loading="lazy" src={js} className="max-w-none" alt="Image 4" />
+          <Image loading="lazy" src={html5} className="max-w-none" alt="Image 5" />
+          <Image loading="lazy" src={css3} className="max-w-none" alt="Image 6" />
+          <Image loading="lazy" src={yarn} className="max-w-none" alt="Image 7" />
+          <Image loading="lazy" src={react} className="max-w-none" alt="Image 8" />
+          <Image loading="lazy" src={redux} className="max-w-none" alt="Image 9" />
+          <Image loading="lazy" src={sass} className="max-w-none" alt="Image 10" />
+          <Image loading="lazy" src={handlebars} className="max-w-none" alt="Image 11" />
+        </div>
+        <div className="flex space-x-16 animate-loop-scroll group-hover:paused"  aria-hidden="true">
+          <Image loading="lazy" src={tailwind} className="max-w-none" alt="Image 1" />
+          <Image loading="lazy" src={bootstrap} className="max-w-none" alt="Image 2" />
+          <Image loading="lazy" src={ts} className="max-w-none" alt="Image 3" />
+          <Image loading="lazy" src={js} className="max-w-none" alt="Image 4" />
+          <Image loading="lazy" src={html5} className="max-w-none" alt="Image 5" />
+          <Image loading="lazy" src={css3} className="max-w-none" alt="Image 6" />
+          <Image loading="lazy" src={yarn} className="max-w-none" alt="Image 7" />
+          <Image loading="lazy" src={react} className="max-w-none" alt="Image 8" />
+          <Image loading="lazy" src={redux} className="max-w-none" alt="Image 9" />
+          <Image loading="lazy" src={sass} className="max-w-none" alt="Image 10" />
+          <Image loading="lazy" src={handlebars} className="max-w-none" alt="Image 11" />
+        </div>
+      </div>
+
   )
 }
 

@@ -14,14 +14,19 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       animation: {
-        "loop-scroll": "loop-scroll 50s linear infinite"
+        "loop-scroll": "loop-scroll 50s linear infinite",
+        "loop-scroll-right":"loop-scroll-right 50s linear infinite",
       },
       keyframes: {
-        "loop-scroll": {
-          from: { transfrom: "translateX(0)" },
-          to: { transform: "translateX(-100%)" }
-        }
-      }
+        'loop-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        },
+        'loop-scroll-right': {
+          from: { transform: 'translateX(-100%)' },
+          to: { transform: 'translateX(0)' },
+        },
+      } 
     },
   },
   plugins: [],
