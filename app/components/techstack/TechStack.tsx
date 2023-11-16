@@ -7,8 +7,8 @@ const TechStack = () => {
   return (
     <div className={styles.techStack}>
       <div className={styles.headingGroup}>
-        <p className={styles.techStackHeading}>My Tech Stack</p>
-        <p>Technologies I have been working with recently</p>
+        <p className={styles.mainHeading}>My Tech Stack</p>
+        <p className={styles.subHeading}>Technologies I have been working with recently</p>
       </div>
       <div className={styles.logoGroup}>
         <ScrollingLogos/>
