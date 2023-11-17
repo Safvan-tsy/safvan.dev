@@ -15,12 +15,12 @@ const NavBar = () => {
             <nav className={styles.nav}>
                 <ul className={styles.list}>
                     <li className={styles.listItem}>
-                        <Link href="/page1">
+                        <Link href="/">
                             <FaHome />
                         </Link>
                     </li>
                     <li className={styles.listItem}>
-                        <Link href="/page2">
+                        <Link href="/about">
                             <FaMedapps />
                         </Link>
                     </li>
