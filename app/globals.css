@@ -12,13 +12,12 @@
   --background-black:rgb(4, 4, 4);
   --component-background:rgb(18, 16, 15);
   --default-font-color:aliceblue;
-  --globalfont:'Times New Roman', serif;
 }
 
 body {
   background-color: var(--background-black);
   padding: 1rem;
-  font-family: var(--globalfont,sans-serif);
+  font-family: var(--font-capriola);
   color:var(--default-font-color);
   display: flex;
   flex-direction: column;
