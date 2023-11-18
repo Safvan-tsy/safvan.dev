@@ -12,8 +12,8 @@ const title = {
   animate: {
     opacity: 1,
     transition: {
-      delay: 0.5,
-      straggerChildren: 0.08,
+      delay: 0.7,
+      straggerChildren: 0.1,
     }
   }
 }

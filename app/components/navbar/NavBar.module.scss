@@ -1,17 +1,14 @@
 .nav {
     position: fixed;
-    z-index: 99;
+    z-index: 50;
     background-color: var(--component-background);
     transition: 0.5s;
     display: flex;
     border-radius: 3rem;
     right: 1.4rem;
     left: auto;
-    $navHeight: 18rem;
-    $screenHeight: 100vh;
-    $topPosition: calc(($screenHeight - #{$navHeight}) / 2);
-
-    top: $topPosition;
+    top: 50%; 
+    transform: translateY(-50%); 
 }
 
 .img {
@@ -43,11 +40,47 @@
         cursor: pointer;
     }
 
+
+}
+.tooltip {
+    position: relative;
 }
 
+.tooltip:hover .tooltip_container {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-100%) translateY(-50%);
+}
 
+.tooltip_container {
+    position: absolute;
+    top: 50%;
+    right: 0.2rem; 
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
 
+.tooltip_container:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -10px; 
+    transform: translateY(-50%);
+    border: 8px solid transparent;
+    border-right-color: rgb(44, 44, 45); 
+}
 
+.tooltip_text {
+    background: rgb(44, 44, 45);
+    border-radius: 3px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
 @media (max-width: 1536px) {}
 
 @media (max-width: 1280px) {}
@@ -62,6 +95,7 @@
         top: auto;
         left: auto;
         right: auto;
+        transform: none;
     }
 
     .list {

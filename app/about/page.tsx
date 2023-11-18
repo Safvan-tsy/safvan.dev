@@ -1,8 +1,12 @@
 import React from 'react'
+import TransitionEffect from '../components/animated/TransitionEffect'
 
 const About = () => {
   return (
-    <div>page</div>
+    <>
+      <TransitionEffect />
+      <div>about</div>
+    </>
   )
 }
 
