@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 
 const title = {
   initial: {
-    opacity: 0,
+    opacity: 1,
   },
   animate: {
     opacity: 1,
@@ -20,7 +20,7 @@ const title = {
 
 const word = {
   initial: {
-    opacity: 1,
+    opacity: 0,
     y: 50
   },
   animate: {

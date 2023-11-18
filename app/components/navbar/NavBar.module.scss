@@ -1,11 +1,17 @@
 .nav {
-    align-self: flex-end;
     position: fixed;
     z-index: 99;
     background-color: var(--component-background);
     transition: 0.5s;
     display: flex;
     border-radius: 3rem;
+    right: 1.4rem;
+    left: auto;
+    $navHeight: 18rem;
+    $screenHeight: 100vh;
+    $topPosition: calc(($screenHeight - #{$navHeight}) / 2);
+
+    top: $topPosition;
 }
 
 .img {
@@ -53,8 +59,9 @@
     .nav {
         align-self: center;
         bottom: 1%;
-        display: flex;
-        border-radius: 3rem;
+        top: auto;
+        left: auto;
+        right: auto;
     }
 
     .list {

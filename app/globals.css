@@ -9,8 +9,8 @@
 }
 
 :root {
-  --background-black:rgb(17, 16, 15);
-  --component-background:#282c34;
+  --background-black:rgb(4, 4, 4);
+  --component-background:rgb(18, 16, 15);
   --default-font-color:aliceblue;
   --globalfont:'Times New Roman', serif;
 }
