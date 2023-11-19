@@ -52,12 +52,7 @@ const Hero = () => {
       </motion.div>
 
       <div className={styles.image}>
-        <Image
-          src={profile}
-          width={300}
-          height={300}
-          alt="Picture"
-        />
+        <Image src={profile} alt="Image" className={styles.mainPic}/>
       </div>
     </div>
   );
