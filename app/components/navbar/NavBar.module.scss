@@ -114,6 +114,9 @@
         padding: 0.3rem;
     }
 
+    .tooltip:hover .tooltip_container {
+        visibility: hidden;
+    }
 }
 
 @media (max-width: 640px) {}

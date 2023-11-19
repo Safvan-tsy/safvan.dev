@@ -1,87 +1,183 @@
 .hero {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1rem;
-    height: 100vh;
-    width: 100%;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  height: 95vh;
+  width: 100%;
+  justify-content: center;
 }
 
 .heading {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    margin: 0 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 0 2rem 0 2rem;
 }
 
 .heading1 {
-    font-size: 5rem;
+  font-size: 5rem;
 }
 
 .heading2 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .image {
-    padding: 0.4rem;
+  padding: 0.4rem;
+  position: relative;
 }
 
-.mainPic{
-    transform: scale(1.4);
-    mix-blend-mode: hard-light;   
-    opacity: 0.7;
+.mainPic {
+  position: relative;
+  transform: scale(1.4);
+  mix-blend-mode: hard-light;
+  opacity: 0.7;
+  z-index: 1;
 }
+
+.cta {
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 8rem;
+  height: fit-content;
+  gap: 0.4rem;
+  color: white;
+  border-radius: 15px;
+  padding: 0.7rem 0.7rem 0.7rem;
+}
+
+.ctaText {
+  transition: 0.5s;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.cta:hover .ctaText {
+  display: none;
+  position: absolute;
+}
+
+.ctaSvg {
+  width: 1.4rem;
+  height: 1.4rem;
+  transition: 0.8s;
+}
+
+.cta:hover .ctaSvg {
+  margin-left: 2.5rem;
+  display: block;
+  transform: rotate(50deg);
+}
+
+.overlay {
+  position: absolute;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 2;
+}
+
 
 @media (max-width: 1536px) {}
 
 @media (max-width: 1280px) {}
 
 @media (max-width: 1024px) {
-    .heading1 {
-        font-size: 3rem;
-    }
-    
-    .heading2 {
-        font-size: 2rem;
-    }
+  .heading1 {
+    font-size: 3rem;
+  }
+
+  .heading2 {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
-    
-    .heading1 {
-        font-size: 3rem;
-    }
-    
-    .heading2 {
-        font-size: 1.5rem;
-    }
-    .hero{
-        gap: 0;
-    }
-    .mainPic{
-        transform: scale(1.3);  
-    }
+
+  .heading1 {
+    font-size: 3rem;
+  }
+
+  .heading2 {
+    font-size: 1.5rem;
+  }
+
+  .hero {
+    gap: 0;
+  }
+
+  .mainPic {
+    transform: scale(1.3);
+  }
+
+  .cta {
+    margin-top: 0.2rem;
+    padding: 0.5 0.5 0.5 0.5;
+    width: 6rem;
+  }
+
+  .ctaText {
+    font-size: 0.7rem;
+  }
+
+  .ctaSvg {
+    width: .9rem;
+    height: .9rem;
+  }
+
+  .cta:hover .ctaSvg {
+    margin-left: 2rem;
+  }
 }
 
 @media (max-width: 640px) {
-    .hero {
-        flex-direction: column;
-    }
-    
-    .heading1 {
-        font-size: 2rem;
-    }
-    
-    .heading2 {
-        font-size: 1rem;
-    }
-    .hero{
-        gap: 2rem;
-    }
-    .mainPic{
-        transform: scale(1.2);  
-    }
+  .hero {
+    flex-direction: column;
+  }
+
+  .heading1 {
+    font-size: 2rem;
+  }
+
+  .heading2 {
+    font-size: 1rem;
+  }
+
+  .hero {
+    gap: 2rem;
+  }
+
+  .mainPic {
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 380px) {
+
+  .cta {
+    margin-top: 0.2rem;
+    padding: 0.3 0.3 0.3 0.3;
+    width: 5rem;
+  }
+
+  .ctaText {
+    font-size: 0.6rem;
+  }
+
+  .ctaSvg {
+    width: .8rem;
+    height: .8rem;
+  }
+
+  .cta:hover .ctaSvg {
+    margin-left: 1rem;
+  }
 }

@@ -12,6 +12,7 @@
   --background-black:rgb(4, 4, 4);
   --component-background:rgb(18, 16, 15);
   --default-font-color:aliceblue;
+  --button-bg:rgb(24, 21, 19);
 }
 
 body {

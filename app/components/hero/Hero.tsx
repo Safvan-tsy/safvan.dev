@@ -4,6 +4,7 @@ import styles from './Hero.module.scss';
 import Image from 'next/image';
 import profile from './../../assets/profile.png';
 import { motion } from 'framer-motion'
+import { FaTelegramPlane } from "react-icons/fa";
 
 const title = {
   initial: {
@@ -49,10 +50,18 @@ const Hero = () => {
         <motion.h2
           variants={word}
           className={styles.heading2}>SOFTWARE DEVELOPER</motion.h2>
+        <button className={`
+          bg-[--button-bg]
+          font-bold py-3 px-6 rounded-full shadow-lg shadow-neutral-950
+           text-white transform transition-all duration-500 ease-in-out 
+           scale-110 brightness-110 animate-pulse ${styles.cta}`}>
+          <FaTelegramPlane className={styles.ctaSvg} />
+          <span className={styles.ctaText}>Contact</span>
+        </button>
       </motion.div>
-
       <div className={styles.image}>
-        <Image src={profile} alt="Image" className={styles.mainPic}/>
+      <div className={styles.overlay}></div>
+        <Image   onContextMenu={(e) => e.preventDefault()} src={profile} alt="Image" className={styles.mainPic} />
       </div>
     </div>
   );
