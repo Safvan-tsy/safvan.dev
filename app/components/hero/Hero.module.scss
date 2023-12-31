@@ -5,7 +5,7 @@
   gap: 1rem;
   height: 95vh;
   width: 100%;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .heading {
@@ -14,7 +14,7 @@
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
-  margin: 0 2rem 0 2rem;
+  // margin: 0 2rem 0 2rem;
 }
 
 .heading1 {
@@ -31,11 +31,8 @@
 }
 
 .mainPic {
-  position: relative;
   transform: scale(1.4);
-  mix-blend-mode: hard-light;
-  opacity: 0.7;
-  z-index: 1;
+  border-radius: 100%;
 }
 
 .cta {
@@ -98,6 +95,9 @@
   .heading2 {
     font-size: 2rem;
   }
+  .mainPic {
+    transform: scale(1);
+  }
 }
 
 @media (max-width: 768px) {
@@ -115,7 +115,7 @@
   }
 
   .mainPic {
-    transform: scale(1.3);
+    transform: scale(0.9);
   }
 
   .cta {
@@ -141,6 +141,7 @@
 @media (max-width: 640px) {
   .hero {
     flex-direction: column;
+    justify-content: center;
   }
 
   .heading1 {
@@ -156,14 +157,14 @@
   }
 
   .mainPic {
-    transform: scale(1.2);
+    transform: scale(0.8);
   }
 }
 
 @media (max-width: 380px) {
 
   .cta {
-    margin-top: 0.2rem;
+    margin-top: 0.3rem;
     padding: 0.3 0.3 0.3 0.3;
     width: 5rem;
   }
