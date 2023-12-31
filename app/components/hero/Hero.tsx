@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from './Hero.module.scss';
 import Image from 'next/image';
-import profile from './../../assets/profile.png';
+import profile from './../../assets/pic.jpg';
 import { motion } from 'framer-motion'
 import { FaTelegramPlane } from "react-icons/fa";
 
