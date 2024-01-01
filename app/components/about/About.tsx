@@ -50,20 +50,26 @@ const AboutComponent = () => {
                 </motion.h4>
                 <motion.div
                     variants={word} className='mt-3 lg:mr-8 xl:mr-16 xl:mt-6'>
-                    <p className='flex flex-wrap text-[--paragraph-font] font-inter tracking-wide text-lg 
-                    sm:text-xl '>
-                        I’m Safvan, a product designer and design system specialist from Poland with over 9 years of experience focusing on user experience and design systems to creating a user-centered design in SaaS products.
+                    <p className='flex flex-wrap text-[--paragraph-font] font-inter tracking-wide text-md 
+                    lg:text-xl '>
+                        I'm Safvan, a seasoned software developer from India proficient in Node.js backend development. 
+                        I also excel in frontend development with various technologies. With a strong emphasis 
+                        on delivering high-quality solutions. My expertise spans bothbackend and frontend realms, 
+                        With over 1+ years of experience.
                     </p>
-                    <p className='mt-1 flex flex-wrap text-[--paragraph-font] font-inter tracking-wide text-lg
-                    sm:text-xl xl:mt-2 '>
-                        Co-creator at Tetrisly one of the most popular starter kits for design systems. I had the opportunity to work with Phenom.com, Bidroom.com or Perfops.net but also with many startups from around the world as a Lead Designer.
+                    <p className='mt-2 flex flex-wrap text-[--paragraph-font] font-inter tracking-wide text-md
+                    lg:text-xl '>
+                        In addition, I also have hands-on experience in DevOps tasks. I'm adept at managing Linux servers,
+                        deploying Node.js applications, utilizing tools like PM2 for process management, and configuring web servers
+                        such as Apache and Nginx. This multifaceted skill set allows me to handle end-to-end development
+                        and deployment processes effectively.
                     </p>
                 </motion.div>
             </motion.div>
             <div className='mt-4 hover:-translate-y-2 group bg-neutral-50 duration-500 w-32 h-36 
             flex text-neutral-600 flex-col justify-center items-center relative rounded-xl overflow-hidden shadow-md 
             lg:mt-0 lg:w-fit lg:h-fit'>
-                <Image src={profile} alt="Image" className='object-cover ' />
+                <Image src={profile} alt="Image" className='object-cover lg:w-[40rem] lg:h-[10rem] xl:w-[39rem] xl:h-[13rem]' />
             </div>
 
         </div>
