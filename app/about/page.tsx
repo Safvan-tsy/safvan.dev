@@ -12,8 +12,8 @@ const About = () => {
       {/* <TransitionEffect /> */}
       <AboutComponent />
       <TechStack />
-      <Experience />
-      <Education />
+      {/* <Experience /> */}
+      {/* <Education /> */}
     </div>
   )
 }
