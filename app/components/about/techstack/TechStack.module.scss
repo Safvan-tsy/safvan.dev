@@ -1,11 +1,11 @@
 .techStack{
-    background-color: black;
+    background-color: var(--component-background);
     display: flex;
     flex-direction: column;
     gap: 1rem;
     border-radius: 0.7rem;
     padding: 2rem;
-    width: 80%;
+    max-width: 95%;
 }
 
 .headingGroup{
@@ -33,7 +33,7 @@
 @media (max-width: 768px) {
     .techStack{
         padding: 1.5rem;
-        width: 90%;
+        max-width: 95%;
     }
     
     .mainHeading{
@@ -45,12 +45,12 @@
     .techStack{
         gap: 0.6rem;
         padding: 1rem;
-        width: 95%;
+        max-width: 98%;
     }
     .mainHeading{
         font-size: 1.8rem;
     }
     .subHeading{
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 }
