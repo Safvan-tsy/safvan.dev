@@ -13,6 +13,7 @@
   --component-background:rgb(26, 26, 26);
   --default-font-color:aliceblue;
   --button-bg:rgb(24, 21, 19);
+  --paragraph-font:rgba(255, 255, 255, .6);
 }
 
 body {

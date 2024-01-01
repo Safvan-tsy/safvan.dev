@@ -3,6 +3,12 @@ import NavBar from './components/navbar/NavBar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Capriola } from "next/font/google";
+import { Inter } from "next/font/google";
+
+const interFont = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
 
 const capriola = Capriola({
   subsets: ["latin"],
@@ -44,7 +50,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${capriola.variable} `}
+      className={`${capriola.variable} ${interFont.variable}  `}
     >
       <body>
         <NavBar />
