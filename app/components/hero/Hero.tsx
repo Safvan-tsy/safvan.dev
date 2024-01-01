@@ -14,7 +14,7 @@ const title = {
     opacity: 1,
     transition: {
       delay: 0.5,
-      straggerChildren: 0.1,
+      staggerChildren: 0.1,
     }
   }
 }
@@ -60,8 +60,8 @@ const Hero = () => {
         </button>
       </motion.div>
       <div className={styles.image}>
-      <div className={styles.overlay}></div>
-        <Image   onContextMenu={(e) => e.preventDefault()} src={profile} alt="Image" className={styles.mainPic} />
+        <div className={styles.overlay}></div>
+        <Image onContextMenu={(e) => e.preventDefault()} src={profile} alt="Image" className={styles.mainPic} />
       </div>
     </div>
   );
