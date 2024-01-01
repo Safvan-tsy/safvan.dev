@@ -7,7 +7,7 @@ import AboutComponent from '../components/about/About'
 
 const About = () => {
   return (
-    <div>
+    <div className='flex max-w-[100%] flex-col flex-wrap items-center'>
       {/* <TransitionEffect /> */}
       <AboutComponent />
       <TechStack />
