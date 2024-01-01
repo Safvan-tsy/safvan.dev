@@ -13,7 +13,7 @@ const title = {
   animate: {
     opacity: 1,
     transition: {
-      delay: 0.7,
+      delay: 0.5,
       straggerChildren: 0.1,
     }
   }
@@ -28,7 +28,7 @@ const word = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 1,
+      duration: 0.6,
     }
   }
 }
