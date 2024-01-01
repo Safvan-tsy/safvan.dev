@@ -100,11 +100,7 @@
     }
 
     .list {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        align-items: center;
+        flex-direction: row-reverse;
         padding: 0.3rem;
         gap: 1rem;
         margin: 0 1rem 0 1rem;
@@ -115,7 +111,7 @@
     }
 
     .tooltip:hover .tooltip_container {
-        visibility: hidden;
+        display: none;
     }
 }
 

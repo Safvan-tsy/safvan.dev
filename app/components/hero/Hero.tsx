@@ -13,8 +13,8 @@ const title = {
   animate: {
     opacity: 1,
     transition: {
-      delay: 0.7,
-      straggerChildren: 0.1,
+      delay: 0.5,
+      staggerChildren: 0.1,
     }
   }
 }
@@ -28,7 +28,7 @@ const word = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 1,
+      duration: 0.6,
     }
   }
 }
@@ -60,8 +60,8 @@ const Hero = () => {
         </button>
       </motion.div>
       <div className={styles.image}>
-      <div className={styles.overlay}></div>
-        <Image   onContextMenu={(e) => e.preventDefault()} src={profile} alt="Image" className={styles.mainPic} />
+        <div className={styles.overlay}></div>
+        <Image onContextMenu={(e) => e.preventDefault()} src={profile} alt="Image" className={styles.mainPic} />
       </div>
     </div>
   );
