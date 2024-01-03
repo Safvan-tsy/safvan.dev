@@ -51,14 +51,14 @@ const AboutComponent = () => {
                 <motion.div
                     variants={word} className='mt-3 lg:mr-8 xl:mr-16 xl:mt-6'>
                     <p className='flex flex-wrap text-[--paragraph-font] font-inter tracking-wide text-md 
-                    lg:text-xl '>
+                    lg:text-[18px] '>
                         I&apos;m Safvan, a seasoned software developer from India proficient in Node.js backend development. 
                         I also excel in frontend development with various technologies. With a strong emphasis 
-                        on delivering high-quality solutions. My expertise spans bothbackend and frontend realms, 
+                        on delivering high-quality solutions. My expertise spans both backend and frontend realms, 
                         With over 1+ years of experience.
                     </p>
                     <p className='mt-2 flex flex-wrap text-[--paragraph-font] font-inter tracking-wide text-md
-                    lg:text-xl '>
+                    lg:text-[18px] '>
                         In addition, I also have hands-on experience in DevOps tasks. I&apos;m adept at managing Linux servers,
                         deploying Node.js applications, utilizing tools like PM2 for process management, and configuring web servers
                         such as Apache and Nginx. This multifaceted skill set allows me to handle end-to-end development
