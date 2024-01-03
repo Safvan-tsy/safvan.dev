@@ -54,7 +54,7 @@ const AboutComponent = () => {
                     lg:text-[18px] '>
                         I&apos;m Safvan, a seasoned software developer from India proficient in Node.js backend development. 
                         I also excel in frontend development with various technologies. With a strong emphasis 
-                        on delivering high-quality solutions. My expertise spans bothbackend and frontend realms, 
+                        on delivering high-quality solutions. My expertise spans both backend and frontend realms, 
                         With over 1+ years of experience.
                     </p>
                     <p className='mt-2 flex flex-wrap text-[--paragraph-font] font-inter tracking-wide text-md
