@@ -15,7 +15,7 @@ import tailwind from '../../../assets/tech/tailwindcss.svg';
 const techLogos = [
   tailwind, bootstrap,
   ts, js, html5,
-  css3, yarn, react,
+  css3, react,
   redux, sass,
   handlebars,
 ];
