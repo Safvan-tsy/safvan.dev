@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './Experience.module.scss'
 
 const Experience = () => {
   return (
@@ -12,36 +13,36 @@ const Experience = () => {
         <div className='m-2 p-2 flex flex-col md:flex-row border-b-2 border-gray-600'>
           <div className='md:w-[30%]'>
             <div>
-              <h2 className='text-semibold tracking-wider'>
+              <h2 className='text-bold tracking-wider'>
                 Unfold Solution
               </h2>
               <p className='text-sm text-gray-400'>1 yr 1 mo</p>
               <p className='text-sm text-gray-400'>Remote - Melbourne, Australia</p>
             </div>
-            <div className='p-2'>
+            <div className='p-4'>
               <ul>
-                <li>
+                <li className=''>
+                  <span className={styles.circleStyle}>
+                    <span className={styles.lineStyle}>
+                    </span>
+                  </span>
                   <div>
                     <h3 className=''>Software Engineer</h3>
                     <span className='text-sm text-gray-400'>Dec 2023 - Present</span>
                   </div>
                 </li>
-                <li className=''>
-                  <div className='relative'>
-                    {/* content: "";
-                    position: absolute;
-                    left: calc(-3.2rem - 2px / 2);
-                    top: calc(calc(1.2rem + 0.8rem) + 0.8rem + 0.8rem);
-                    height: calc(100% - (2 * 1.2rem));
-                    width: 2px;
-                    background-color: var(--color-border-faint); */}
-                    <h3>Junior Software Engineer</h3>
+                <li className='mt-2'>
+                  <span className={styles.circleStyle}>
+                    <span className={styles.lineStyle}>
+                    </span>
+                  </span>
+                  <div className=''>
+                    <h3>Jr Software Engineer</h3>
                     <span className='text-sm text-gray-400'>May 2023 - Nov 2023</span>
-                    <div className="absolute left-[calc(-3.2rem-1px)] top-[calc(calc(1.2rem+0.8rem)+0.8rem+0.8rem)] 
-                  h-[calc(100%-2*(1.2rem))] w-2 bg-gray-400"></div>
                   </div>
                 </li>
-                <li>
+                <li className='mt-2'>
+                  <span className={styles.circleStyle}></span>
                   <div>
                     <h3>Trainee Developer</h3>
                     <span className='text-sm text-gray-400'>Jan 2023 - April 2023</span>
@@ -51,12 +52,51 @@ const Experience = () => {
             </div>
           </div>
           <div className='md:w-[70%]'>
+            <ul className='flex flex-wrap text-[--paragraph-font] font-inter tracking-wide text-md 
+                    lg:text-[18px] text-sm'>
+              <li className='py-1 list-disc'>
+                Thrived as a backend developer specializing in Node.js, extensively utilizing frameworks like Express and NestJS.
+              </li>
+              <li className='py-1 list-disc'>
+                Focused on crafting robust applications, leveraging MongoDB as the primary database, and
+                ensuring meticulous project documentation.
+              </li>
+              <li className='py-1 list-disc'>
+                Conducted rigorous API testing using tools such as Postman and Apache JMeter to
+                ensure the reliability and functionality of developed solutions.
+              </li>
+              <li className='py-1 list-disc'>
+                Embraced agile methodologies for the software development lifecycle, contributing to increased
+                adaptability and efficiency in project workflows.
+              </li>
+              <li className='py-1 list-disc'>
+                Ventured into DevOps tasks, demonstrating proficiency in managing Linux servers, deploying Node.js applications via PM2,
+                and configuring versatile web servers like Apache and Nginx.
+              </li>
+              <li className='py-1 list-disc'>
+                Contributed significantly to end-to-end development and deployment processes, playing a crucial role in enhancing team
+                productivity and elevating project outcomes.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className='m-2 p-2 flex flex-col md:flex-row '>
+          <div className='md:w-[30%]'>
+            <div>
+              <h2 className='text-semibold tracking-wider'>
+                Software Development Intern
+              </h2>
+              <h3>TGH Tech</h3>
+              <p className='text-sm text-gray-400'>3 mos</p>
+              <p className='text-sm text-gray-400'>Remote - Kerala, India</p>
+            </div>
+          </div>
+          <div className='md:w-[70%]'>
             <p className='flex flex-wrap text-[--paragraph-font] font-inter tracking-wide text-md 
-                    lg:text-[18px] '>
+                    lg:text-[18px] text-sm'>
               Engaged in executing studies, trial runs with users, brainstorming, sketching blueprints,
               and crafting refined user experiences and user interfaces for iOS, Android, and the Web.
-              Closely partnering with engineers, product supervisors, and important personnel. Designing
-              experiences that are guided by data and centered on the user.
+              Closely partnering with engineers, product supervisors, and important personnel.
             </p>
           </div>
         </div>
