@@ -21,13 +21,13 @@ const Experience = () => {
             </div>
             <div className='p-4'>
               <ul>
-                <li className=''>
+                <li>
                   <span className={styles.circleStyle}>
                     <span className={styles.lineStyle}>
                     </span>
                   </span>
                   <div>
-                    <h3 className=''>Software Engineer</h3>
+                    <h3>Software Engineer</h3>
                     <span className='text-sm text-gray-400'>Dec 2023 - Present</span>
                   </div>
                 </li>
@@ -36,7 +36,7 @@ const Experience = () => {
                     <span className={styles.lineStyle}>
                     </span>
                   </span>
-                  <div className=''>
+                  <div>
                     <h3>Jr Software Engineer</h3>
                     <span className='text-sm text-gray-400'>May 2023 - Nov 2023</span>
                   </div>
@@ -80,7 +80,7 @@ const Experience = () => {
             </ul>
           </div>
         </div>
-        <div className='m-2 p-2 flex flex-col md:flex-row '>
+        <div className='m-2 p-2 flex flex-col md:flex-row'>
           <div className='md:w-[30%]'>
             <div>
               <h2 className='text-semibold tracking-wider'>
