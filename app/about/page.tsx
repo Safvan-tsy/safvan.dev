@@ -13,7 +13,7 @@ const About = () => {
       <AboutComponent />
       <TechStack />
       <Experience />
-      {/* <Education /> */}
+      <Education />
     </div>
   )
 }

@@ -10,7 +10,7 @@ const Experience = () => {
         Experience
       </h2>
       <div className='mt-2 lg:mt-4'>
-        <div className='m-2 p-2 flex flex-col md:flex-row border-b-2 border-gray-600'>
+        <div className='m-2 p-2 lg:py-6 flex flex-col md:flex-row border-b-[1px] border-gray-600'>
           <div className='md:w-[30%]'>
             <div>
               <h2 className='text-bold tracking-wider'>
@@ -52,8 +52,8 @@ const Experience = () => {
             </div>
           </div>
           <div className='md:w-[70%]'>
-            <ul className='flex flex-wrap text-[--paragraph-font] font-inter tracking-wide text-md 
-                    lg:text-[18px] text-sm'>
+            <ul className='flex flex-wrap text-[--paragraph-font] font-inter tracking-wide 
+                    lg:text-[16px] text-sm lg:leading-6 lg:tracking-wider'>
               <li className='py-1 list-disc'>
                 Thrived as a backend developer specializing in Node.js, extensively utilizing frameworks like Express and NestJS.
               </li>
@@ -80,7 +80,7 @@ const Experience = () => {
             </ul>
           </div>
         </div>
-        <div className='m-2 p-2 flex flex-col md:flex-row'>
+        <div className='m-2 p-2 flex flex-col md:flex-row lg:py-6'>
           <div className='md:w-[30%]'>
             <div>
               <h2 className='text-semibold tracking-wider'>
@@ -92,8 +92,8 @@ const Experience = () => {
             </div>
           </div>
           <div className='md:w-[70%]'>
-            <ul className='flex flex-wrap text-[--paragraph-font] font-inter tracking-wide text-md 
-                    lg:text-[18px] text-sm'>
+            <ul className='flex flex-wrap text-[--paragraph-font] font-inter tracking-wide 
+                    lg:text-[16px] text-sm lg:leading-6 lg:tracking-wider'>
               <li className=' list-disc'>
                 As a Software Development Intern, I focused on bolstering a product&apos;s backend using Node.js and
                 the Fastify framework while gaining expertise in MongoDB for database management.
