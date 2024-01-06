@@ -95,7 +95,7 @@ const Experience = () => {
             <ul className='flex flex-wrap text-[--paragraph-font] font-inter tracking-wide text-md 
                     lg:text-[18px] text-sm'>
               <li className=' list-disc'>
-                As a Software Development Intern, I focused on bolstering a product's backend using Node.js and
+                As a Software Development Intern, I focused on bolstering a product&apos;s backend using Node.js and
                 the Fastify framework while gaining expertise in MongoDB for database management.
               </li>
             </ul>
