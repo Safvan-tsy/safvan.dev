@@ -24,7 +24,7 @@ const Education = () => {
             <ul className='flex flex-wrap text-[--paragraph-font] font-inter tracking-wide text-md 
                     lg:text-[16px] text-sm lg:leading-6 lg:tracking-wider'>
               <li className='py-1 list-disc'>
-                Focused 3-year Software Development degree, deepening computer science fundamentals.
+                Focused three-year Software Development degree, deepening computer science fundamentals.
               </li>
               <li className='py-1 list-disc'>
                 Explored Data Structures, Algorithms, and expanded web development skills.
@@ -64,7 +64,7 @@ const Education = () => {
                 Acquired a solid grounding in programming languages and essential principles during the educational tenure.
               </li>
               <li className='py-1 list-disc'>
-                Successfully completed the program with an approximate 80% achievement mark.
+                Successfully completed the program with an approximate 80% achievement score.
               </li>
             </ul>
           </div>
