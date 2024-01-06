@@ -9,7 +9,7 @@ const Experience = () => {
                 md:text-3xl xl:text-4xl'>
         Experience
       </h2>
-      <div className=''>
+      <div className='mt-2 lg:mt-4'>
         <div className='m-2 p-2 flex flex-col md:flex-row border-b-2 border-gray-600'>
           <div className='md:w-[30%]'>
             <div>
@@ -92,12 +92,13 @@ const Experience = () => {
             </div>
           </div>
           <div className='md:w-[70%]'>
-            <p className='flex flex-wrap text-[--paragraph-font] font-inter tracking-wide text-md 
+            <ul className='flex flex-wrap text-[--paragraph-font] font-inter tracking-wide text-md 
                     lg:text-[18px] text-sm'>
-              Engaged in executing studies, trial runs with users, brainstorming, sketching blueprints,
-              and crafting refined user experiences and user interfaces for iOS, Android, and the Web.
-              Closely partnering with engineers, product supervisors, and important personnel.
-            </p>
+              <li className=' list-disc'>
+                As a Software Development Intern, I focused on bolstering a product's backend using Node.js and
+                the Fastify framework while gaining expertise in MongoDB for database management.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
