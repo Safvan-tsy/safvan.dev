@@ -19,7 +19,7 @@
 body {
   background-color: var(--background-black);
   padding: 1rem;
-  font-family: var(--font-capriola);
+  font-family: var(--font-inter);
   color:var(--default-font-color);
   display: flex;
   flex-direction: column;

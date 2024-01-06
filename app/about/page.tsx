@@ -12,7 +12,7 @@ const About = () => {
       {/* <TransitionEffect /> */}
       <AboutComponent />
       <TechStack />
-      {/* <Experience /> */}
+      <Experience />
       {/* <Education /> */}
     </div>
   )

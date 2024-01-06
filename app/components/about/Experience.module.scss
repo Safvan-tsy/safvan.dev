@@ -1,0 +1,21 @@
+.circleStyle {
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    height: 0.3rem;
+    width: 0.3rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    top: 1rem;
+    right: 0.8rem;
+}
+
+.lineStyle {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 15%) rotate(180deg);
+    height: 3rem;
+    width: 0.7px;
+    background-color: rgb(95, 95, 95);
+}
