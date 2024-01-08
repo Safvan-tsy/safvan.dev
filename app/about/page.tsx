@@ -7,8 +7,8 @@ import AboutComponent from '../components/about/About'
 
 const About = () => {
   return (
-    <div className='md:[90%] flex w-full flex-col flex-wrap items-center rounded-xl 
-    bg-[--component-background] sm:w-[95%] lg:w-[88%] xl:w-[85%]'>
+    <div className='md:w-[90%] flex w-full flex-col flex-wrap items-center rounded-xl 
+    bg-[--component-background] sm:w-[95%] lg:w-[88%] xl:w-[85%] mb-4'>
       {/* <TransitionEffect /> */}
       <AboutComponent />
       <TechStack />

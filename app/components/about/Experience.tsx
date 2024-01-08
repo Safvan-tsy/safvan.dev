@@ -1,4 +1,3 @@
-'use client'
 import React from 'react'
 import styles from './Experience.module.scss'
 import { motion, Variants, useScroll } from "framer-motion";

@@ -1,4 +1,3 @@
-'use client'
 import React from 'react'
 import Reveal from '../animated/Reveal'
 
