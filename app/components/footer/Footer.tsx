@@ -21,13 +21,13 @@ const Footer = () => {
           © 2023 Safvan
         </p>
       </div>
-      <div className='flex sm:hidden md:w-[90%] w-full mt-6 lg:mt-20 p-3 lg:pt-8 flex-col flex-wrap justify-center 
-      items-center sm:w-[95%] lg:w-[88%] xl:w-[85%] border-t-[1px] border-gray-600 pb-6'>
+      <div className='flex sm:hidden w-full mt-6 p-3 flex-col flex-wrap justify-center 
+      items-center sm:w-[95%] lg:w-[88%] xl:w-[85%] border-t-[1px] border-gray-600 pb-7'>
         <p className='text-[0.5rem] sm:text-sm text-gray-400 p-1'>
           Built with Next.js and Tailwind CSS, deployed with Vercel.
           Interested in working together? We should queue up a time to chat.
 
-          <span className='ml-1 text-[0.5rem] sm:text-sm p-[0.1rem] border bg-gray-700 shadow-sm 
+          <span className='ml-1 mt-1 text-[0.5rem] sm:text-sm p-[0.1rem] border bg-gray-700 shadow-sm 
            border-gray-600 hover:border-gray-700 text-gray-300 rounded-sm hover:shadow-lg hover:bg-gray-800
             transition ease-in duration-300 cursor-pointer'>
             Lets talk
