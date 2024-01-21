@@ -7,12 +7,12 @@ const page = () => {
   return (
     <div
       className="md:w-[90%] flex w-full flex-col flex-wrap items-center rounded-xl 
-  bg-[--component-background] sm:w-[95%] lg:w-[88%] xl:w-[85%] mb-4"
+  bg-[--component-background] sm:w-[95%] lg:w-[88%] xl:w-[85%] mb-4 md:px-4 lg:px-6 lg:pb-8 xl:px-10"
     >
-      <div className="w-full mt-8 p-4 lg:mt-10 lg:mb-4 ">
+      <div className="w-full mt-8 p-4 lg:mt-10">
         <div
           className="flex w-full justify-start flex-col items-start flex-wrap 
-        border-b-[1px] border-gray-600 pb-6"
+        border-b-[1px] border-gray-700 pb-6"
         >
           <h1
             className="text-gray-200 mt-2 text-2xl font-inter
@@ -21,7 +21,7 @@ const page = () => {
             Contact
           </h1>
           <h3 className="text-gray-400 py-4">
-            Get in touch for design inquiries
+            Get in touch for inquiries
           </h3>
         </div>
         <Email />
