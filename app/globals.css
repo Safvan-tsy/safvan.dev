@@ -2,31 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities{
-  .paused{
+@layer utilities {
+  .paused {
     animation-play-state: paused;
   }
 }
 
 :root {
-  --background-black:rgb(13, 13, 13);
-  --component-background:rgb(26, 26, 26);
-  --default-font-color:aliceblue;
-  --button-bg:rgb(24, 21, 19);
-  --paragraph-font:rgba(255, 255, 255, .6);
+  --background-black: rgb(13, 13, 13);
+  --component-background: rgb(26, 26, 26);
+  --default-font-color: aliceblue;
+  --button-bg: rgb(24, 21, 19);
+  --paragraph-font: rgba(255, 255, 255, 0.6);
+  --input-bg: rgb(40, 40, 40);
 }
 
 body {
   background-color: var(--background-black);
   padding: 1rem;
   font-family: var(--font-inter);
-  color:var(--default-font-color);
+  color: var(--default-font-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
 }
-main{
+main {
   flex: 1;
   display: flex;
   flex-wrap: wrap;
