@@ -21,7 +21,7 @@ const Experience = () => {
                 <h2 className='text-bold tracking-wider'>
                   Unfold Solution
                 </h2>
-                <p className='text-sm text-gray-400'>1 yr 1 mo</p>
+                <p className='text-sm text-gray-400'>1 yr 4 mo</p>
                 <p className='text-sm text-gray-400'>Remote - Melbourne, Australia</p>
               </div>
               <div className='p-4'>
