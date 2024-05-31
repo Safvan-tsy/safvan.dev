@@ -70,7 +70,7 @@ const ProjectListCard = ({ project }: { project: ProjectType }) => {
             <h5 className="mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
               {project.projectName}
             </h5>
-            <p className="block font-light leading-relaxed text-inherit antialiased text-sm">
+            <p className="block font-light leading-relaxed text-inherit antialiased text-sm lg:text-base">
               {project.summary}
             </p>
           </div>
