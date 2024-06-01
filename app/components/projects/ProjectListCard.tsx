@@ -60,17 +60,17 @@ const ProjectListCard = ({ project }: { project: ProjectType }) => {
         <img
           src={project.profile}
           alt="image"
-          className="relative mx-4 md:w-96 h-40 overflow-hidden rounded-xl text-white shadow-lg 
+          className="relative mx-4 md:min-w-[20rem] h-40 overflow-hidden rounded-xl text-white shadow-lg 
           shadow-blue-gray-500/40 bg-gradient-to-r from-stone-500 to-stone-900 
           object-cover object-center"
         />
-
         <div className="flex flex-col">
           <div className="p-2">
             <h5 className="mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
               {project.projectName}
             </h5>
-            <p className="block font-light leading-relaxed text-inherit antialiased text-sm lg:text-base">
+            <p className="block text-[--paragraph-font] font-inter tracking-wide text-sm
+                    lg:text-[18px] lg:leading-6 lg:tracking-wider">
               {project.summary}
             </p>
           </div>
