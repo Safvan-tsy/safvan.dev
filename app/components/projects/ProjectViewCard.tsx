@@ -2,6 +2,7 @@ import { ProjectType } from "@/app/projects/data/projects";
 import Link from "next/link";
 import React from "react";
 import { FaGithub } from "react-icons/fa";
+import ImageCarousel from "../ui/carousel/ImageCarousel";
 
 const ProjectViewCard = ({ project }: { project: ProjectType }) => {
   return (
@@ -46,13 +47,13 @@ const ProjectViewCard = ({ project }: { project: ProjectType }) => {
             {project.summary}
           </p>
         </div>
-        <div className="flex flex-col p-5">
+        <div className="flex flex-col md:p-4 xl:p-5">
           <Link
             href={project.repoLink}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="flex flex-wrap gap-1 p-6 cursor-pointer items-center">
+            <div className="flex flex-wrap gap-1 py-4 cursor-pointer items-center">
               <FaGithub />
               <p
                 className="text-[--paragraph-font] font-inter tracking-wide text-sm
@@ -62,7 +63,7 @@ const ProjectViewCard = ({ project }: { project: ProjectType }) => {
               </p>
             </div>
           </Link>
-          <h2 className="text-gray-400 mt-2 text-xl font-inter font-semibold md:text-2xl xl:text-3xl lg:tracking-wide">
+          <h2 className="text-gray-400 mt-1 text-xl font-inter font-semibold md:text-2xl xl:text-3xl lg:tracking-wide">
             Tech Stack
           </h2>
           <ul className="flex flex-col list-disc p-4 gap-2">
@@ -72,13 +73,38 @@ const ProjectViewCard = ({ project }: { project: ProjectType }) => {
                 className="list-item text-[--paragraph-font] font-inter tracking-wide text-sm
               lg:text-[18px] lg:leading-6 lg:tracking-wider "
               >
-                {item.tech}: {item.values.join()}
+                <span className=" font-semibold text-gray-400">
+                  {item.tech}:
+                </span>{" "}
+                {item.values.join()}
               </li>
             ))}
           </ul>
         </div>
-        <div className="flex flex-col p-5 pt-0">
-          <h2 className="text-gray-400 mt-2 text-xl font-inter font-semibold md:text-2xl xl:text-3xl lg:tracking-wide">
+        <div className="flex flex-col md:p-4 xl:p-5 pt-0">
+          <h2 className="text-gray-400 mt-1 text-xl font-inter font-semibold md:text-2xl xl:text-3xl lg:tracking-wide">
+            Features
+          </h2>
+          <ul className="flex flex-col list-disc p-4 gap-2">
+            {project.feat?.map((item) => (
+              <li
+                key={item}
+                className="list-item text-[--paragraph-font] font-inter tracking-wide text-sm
+              lg:text-[18px] lg:leading-6 lg:tracking-wider "
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="flex flex-col md:p-4 xl:p-5 pt-0">
+          <h2 className="text-gray-400 mt-1 text-xl font-inter font-semibold md:text-2xl xl:text-3xl lg:tracking-wide">
+            Visuals
+          </h2>
+          <ImageCarousel images={project.visuals} />
+        </div>
+        <div className="flex flex-col md:p-4 xl:p-5 pt-0">
+          <h2 className="text-gray-400 mt-1 text-xl font-inter font-semibold md:text-2xl xl:text-3xl lg:tracking-wide">
             Challenges and Solutions
           </h2>
           <ul className="flex flex-col list-disc p-4 gap-2">
@@ -86,10 +112,36 @@ const ProjectViewCard = ({ project }: { project: ProjectType }) => {
               <li
                 key={item.challenge}
                 className="list-item text-[--paragraph-font] font-inter tracking-wide text-sm
-              lg:text-[18px] lg:leading-6 lg:tracking-wider"
+              lg:text-[18px] lg:tracking-wider"
               >
-                <p className="p-1">Challenge: {item.challenge}</p>
-                <p className="p-1">Solution: {item.solution}</p>
+                <p className=" lg:leading-8">
+                  <span className=" font-semibold text-gray-400">
+                    Challenge:
+                  </span>{" "}
+                  {item.challenge}
+                </p>
+                <p className=" leading-6 lg:leading-8">
+                  <span className=" font-semibold text-gray-400">
+                    Solution:
+                  </span>{" "}
+                  {item.solution}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="flex flex-col md:p-4 xl:p-5 pt-0">
+          <h2 className="text-gray-400 mt-1 text-xl font-inter font-semibold md:text-2xl xl:text-3xl lg:tracking-wide">
+            Learning Outcomes
+          </h2>
+          <ul className="flex flex-col list-disc p-4 gap-2">
+            {project.learningOutcome?.map((item) => (
+              <li
+                key={item}
+                className="list-item text-[--paragraph-font] font-inter tracking-wide text-sm
+              lg:text-[18px] lg:leading-6 lg:tracking-wider "
+              >
+                {item}
               </li>
             ))}
           </ul>
