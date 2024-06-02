@@ -44,7 +44,7 @@ const Footer = () => {
           </p>
         </Link>
 
-        <p className="text-[0.5rem] text-gray-400 p-1">© 2023 Safvan</p>
+        <p className="text-[0.5rem] text-gray-400 p-1">© 2024 Safvan</p>
       </div>
     </footer>
   );
