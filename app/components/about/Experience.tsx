@@ -72,6 +72,16 @@ const Experience = () => {
                   extensively utilizing frameworks like Express and NestJS.
                 </li>
                 <li className="py-1 list-disc">
+                  Designed and developed authentication and authorization
+                  systems, including Role-Based Access Control (RBAC) and
+                  Isomorphic Authorization, to ensure secure and efficient user
+                  management
+                </li>
+                <li className="py-1 list-disc">
+                  Created and maintained RESTful API services, enabling seamless
+                  communication between front-end and back-end systems
+                </li>
+                <li className="py-1 list-disc">
                   Focused on crafting robust applications, leveraging MongoDB as
                   the primary database, and ensuring meticulous project
                   documentation.
