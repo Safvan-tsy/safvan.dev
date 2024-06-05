@@ -17,8 +17,7 @@ const techLogos = [
   nodejs, yarn,
   npm, apache,
   docker, express,
-  git, jenkins,
-  nestjs, linux,
+  git,nestjs, linux,
   postgres, mongo
 ];
 
