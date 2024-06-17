@@ -52,10 +52,10 @@ const AboutComponent = () => {
                     variants={word} className='mt-3 lg:mr-8 xl:mr-16 xl:mt-6'>
                     <p className='flex flex-wrap text-[--paragraph-font] font-inter tracking-wide text-sm
                     lg:text-[18px] lg:leading-6 lg:tracking-wider'>
-                        I&apos;m Safvan, a seasoned software developer from India proficient in Node.js backend development.
+                        I&apos;m a seasoned software developer from India proficient in Node.js backend development.
                         I also excel in frontend development incorporating various technologies With strong emphasis
                         on delivering high-quality solutions. My expertise spans both backend and frontend realms,
-                        With over 1+ years of experience.
+                        With over 1.5 years of experience.
                     </p>
                     <p className='mt-2 flex flex-wrap text-[--paragraph-font] font-inter tracking-wide text-sm
                     lg:text-[18px] lg:leading-6 lg:tracking-wider'>

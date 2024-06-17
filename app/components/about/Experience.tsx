@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Experience.module.scss";
-import { motion, Variants, useScroll } from "framer-motion";
 import Reveal from "../animated/Reveal";
 
 const Experience = () => {
@@ -85,6 +84,10 @@ const Experience = () => {
                   Focused on crafting robust applications, leveraging MongoDB as
                   the primary database, and ensuring meticulous project
                   documentation.
+                </li>
+                <li className="py-1 list-disc">
+                  Practiced Test-Driven Development (TDD), writing unit,
+                  integration, and end-to-end tests using Jest.
                 </li>
                 <li className="py-1 list-disc">
                   Conducted rigorous API testing using tools such as Postman and
