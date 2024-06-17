@@ -52,7 +52,7 @@ export default function RootLayout({
       lang="en"
       className={`${capriola.variable} ${interFont.variable}  `}
     >
-      <body>
+      <body className='bg-[--background-black] bg-dot-white/[0.2]'>
         <NavBar />
         <main>
           {children}

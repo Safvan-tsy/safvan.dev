@@ -18,7 +18,6 @@
 }
 
 body {
-  background-color: var(--background-black);
   padding: 1rem;
   font-family: var(--font-inter);
   color: var(--default-font-color);

@@ -91,6 +91,7 @@ export const projects: ProjectType[] = [
         values: ["Instill AI", "GPT-3.5", "Puppeteer"],
       },
       { tech: "Monorepo Tooling", values: ["Turbo Repo"] },
+      { tech: "Testing", values: ["Vitest"] },
     ],
     feat: [
       "User input of basic details, experience, education, and skills",
@@ -121,6 +122,7 @@ export const projects: ProjectType[] = [
       "Enhanced proficiency with Next.js 14 and modern frontend development practices.",
       "Deepened understanding of integrating AI models into web applications using GPT-3.5 and Instill AI.",
       "Improved backend skills with Express.js and automated document generation with Puppeteer.",
+      "Wrote unit, integration, and end-to-end tests using Vitest to ensure code quality and functionality."
     ],
   },
 ];

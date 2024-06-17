@@ -1,22 +1,28 @@
-import React from 'react';
-import Image from 'next/image';
-import sass from '../../../assets/tech/sass.svg';
-import js from '../../../assets/tech/javascript.svg';
-import ts from '../../../assets/tech/typescript.svg';
-import css3 from '../../../assets/tech/css3.svg';
-import html5 from '../../../assets/tech/html.svg';
-import handlebars from '../../../assets/tech/handlebars.svg';
-import bootstrap from '../../../assets/tech/bootstrap.svg';
-import react from '../../../assets/tech/react.svg';
-import redux from '../../../assets/tech/redux.svg';
-import yarn from '../../../assets/tech/yarn.svg';
-import tailwind from '../../../assets/tech/tailwindcss.svg';
+import React from "react";
+import Image from "next/image";
+import sass from "../../../assets/tech/sass.svg";
+import js from "../../../assets/tech/javascript.svg";
+import ts from "../../../assets/tech/typescript.svg";
+import css3 from "../../../assets/tech/css3.svg";
+import html5 from "../../../assets/tech/html.svg";
+import handlebars from "../../../assets/tech/handlebars.svg";
+import bootstrap from "../../../assets/tech/bootstrap.svg";
+import react from "../../../assets/tech/react.svg";
+import redux from "../../../assets/tech/redux.svg";
+import tailwind from "../../../assets/tech/tailwindcss.svg";
+import nextjs from "../../../assets/tech/nextjs.svg";
 
 const techLogos = [
-  tailwind, bootstrap,
-  ts, js, html5,
-  css3, react,
-  redux, sass,
+  tailwind,
+  bootstrap,
+  nextjs,
+  ts,
+  js,
+  html5,
+  css3,
+  react,
+  redux,
+  sass,
   handlebars,
 ];
 
@@ -38,7 +44,10 @@ const ScrollingLogos = () => {
       <div className="flex space-x-4 sm:space-x-6 md:space-x-8 lg:space-x-10 animate-loop-scroll group-hover:paused">
         {renderTechLogos()}
       </div>
-      <div className="flex space-x-4 sm:space-x-6 md:space-x-8 lg:space-x-10 animate-loop-scroll group-hover:paused" aria-hidden="true">
+      <div
+        className="flex space-x-4 sm:space-x-6 md:space-x-8 lg:space-x-10 animate-loop-scroll group-hover:paused"
+        aria-hidden="true"
+      >
         {renderTechLogos()}
       </div>
     </div>
