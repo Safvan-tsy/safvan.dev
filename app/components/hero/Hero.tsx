@@ -4,7 +4,7 @@ import styles from "./Hero.module.scss";
 import Image from "next/image";
 import profile from "./../../assets/pic.jpg";
 import { motion } from "framer-motion";
-import { FaTelegramPlane } from "react-icons/fa";
+import { FaEnvelopeOpenText, FaTelegramPlane } from "react-icons/fa";
 import Link from "next/link";
 
 const title = {
@@ -52,16 +52,32 @@ const Hero = () => {
         <motion.h2 variants={word} className={styles.heading2}>
           SOFTWARE DEVELOPER
         </motion.h2>
-        <Link href="/contact">
-          <div className={`
+        <div className="flex gap-6">
+          <Link href="/contact">
+            <div
+              className={`
             bg-[--button-bg]
             font-bold py-3 px-6 rounded-full shadow-lg shadow-neutral-950
             text-white transform transition-all duration-500 ease-in-out 
-            scale-110 brightness-110 animate-pulse ${styles.cta}`}>
-            <FaTelegramPlane className={styles.ctaSvg} />
-            <span className={styles.ctaText}>Contact</span>
-          </div>
-        </Link>
+            scale-110 brightness-110 animate-pulse ${styles.cta}`}
+            >
+              <FaTelegramPlane className={styles.ctaSvg} />
+              <span className={styles.ctaText}>Contact</span>
+            </div>
+          </Link>
+          <Link href="https://drive.google.com/file/d/1vZcAUc81zZqOty_opA4P0Jcqu2jVlaPM/view?usp=sharing">
+            <div
+              className={`
+            bg-[--button-bg]
+            font-bold py-3 px-6 rounded-full shadow-lg shadow-neutral-950
+            text-white transform transition-all duration-500 ease-in-out 
+            scale-110 brightness-110 animate-pulse ${styles.cta}`}
+            >
+              <FaEnvelopeOpenText className={styles.ctaSvgResume} />
+              <span className={styles.ctaText}>Resume</span>
+            </div>
+          </Link>
+        </div>
       </motion.div>
       <div className={styles.image}>
         <div className={styles.overlay}></div>

@@ -67,12 +67,23 @@
   transition: 0.8s;
 }
 
-.cta:hover .ctaSvg {
+.ctaSvgResume{
+  width: 1.4rem;
+  height: 1.3rem;
+  transition: 0.8s;
+}
+
+.cta:hover .ctaSvg{
   margin-left: 2.5rem;
   display: block;
   transform: rotate(50deg);
 }
 
+.cta:hover .ctaSvgResume{
+  margin-left: 2.5rem;
+  display: block;
+  transform: rotate(360deg);
+}
 .overlay {
   position: absolute;
   position: absolute;
@@ -135,7 +146,7 @@
     height: .9rem;
   }
 
-  .cta:hover .ctaSvg {
+  .cta:hover .ctaSvg .ctaSvgResume {
     margin-left: 2rem;
   }
 }
@@ -175,12 +186,12 @@
     font-size: 0.6rem;
   }
 
-  .ctaSvg {
+  .ctaSvg .ctaSvgResume {
     width: .8rem;
     height: .8rem;
   }
 
-  .cta:hover .ctaSvg {
+  .cta:hover .ctaSvg .ctaSvgResume {
     margin-left: 1rem;
   }
 }
