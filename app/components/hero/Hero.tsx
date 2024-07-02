@@ -65,7 +65,7 @@ const Hero = () => {
               <span className={styles.ctaText}>Contact</span>
             </div>
           </Link>
-          <Link href="https://drive.google.com/file/d/1aSXDoKXxsbt3uM2x0BeiWzmMIPhVwjVR/view?usp=sharing">
+          <Link href="https://drive.google.com/file/d/1LDVTp8NCVEnMzvr95VZOuY8pG1h7xukm/view?usp=sharing">
             <div
               className={`
             bg-[--button-bg]
