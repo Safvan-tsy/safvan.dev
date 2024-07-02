@@ -67,19 +67,19 @@
   transition: 0.8s;
 }
 
-.ctaSvgResume{
+.ctaSvgResume {
   width: 1.4rem;
   height: 1.3rem;
   transition: 0.8s;
 }
 
-.cta:hover .ctaSvg{
+.cta:hover .ctaSvg {
   margin-left: 2.5rem;
   display: block;
   transform: rotate(50deg);
 }
 
-.cta:hover .ctaSvgResume{
+.cta:hover .ctaSvgResume {
   margin-left: 2.5rem;
   display: block;
   transform: rotate(360deg);
@@ -95,10 +95,11 @@
   z-index: 2;
 }
 
+@media (max-width: 1536px) {
+}
 
-@media (max-width: 1536px) {}
-
-@media (max-width: 1280px) {}
+@media (max-width: 1280px) {
+}
 
 @media (max-width: 1024px) {
   .heading1 {
@@ -114,7 +115,6 @@
 }
 
 @media (max-width: 768px) {
-
   .heading1 {
     font-size: 3rem;
   }
@@ -142,8 +142,8 @@
   }
 
   .ctaSvg {
-    width: .9rem;
-    height: .9rem;
+    width: 0.9rem;
+    height: 0.9rem;
   }
 
   .cta:hover .ctaSvg .ctaSvgResume {
@@ -175,7 +175,6 @@
 }
 
 @media (max-width: 380px) {
-
   .cta {
     margin-top: 0.3rem;
     padding: 0.3 0.3 0.3 0.3;
@@ -187,8 +186,8 @@
   }
 
   .ctaSvg .ctaSvgResume {
-    width: .8rem;
-    height: .8rem;
+    width: 0.8rem;
+    height: 0.8rem;
   }
 
   .cta:hover .ctaSvg .ctaSvgResume {

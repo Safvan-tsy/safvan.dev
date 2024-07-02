@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 
-const Alert = ({ type, text }: { type: string, text: string }) => {
-  if (type == "Danger") {
+const Alert = ({ type, text }: { type: string; text: string }) => {
+  if (type == 'Danger') {
     return (
       <div
-        className="flex items-center p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400"
+        className="mb-4 flex items-center rounded-lg bg-red-50 p-4 text-sm text-red-800 dark:bg-gray-800 dark:text-red-400"
         role="alert"
       >
         <svg
-          className="flex-shrink-0 inline w-4 h-4 me-3"
+          className="me-3 inline h-4 w-4 flex-shrink-0"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="currentColor"
@@ -25,11 +25,11 @@ const Alert = ({ type, text }: { type: string, text: string }) => {
   } else {
     return (
       <div
-        className="flex items-center p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400"
+        className="mb-4 flex items-center rounded-lg bg-green-50 p-4 text-sm text-green-800 dark:bg-gray-800 dark:text-green-400"
         role="alert"
       >
         <svg
-          className="flex-shrink-0 inline w-4 h-4 me-3"
+          className="me-3 inline h-4 w-4 flex-shrink-0"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="currentColor"

@@ -1,11 +1,11 @@
-"use client";
-import React from "react";
-import styles from "./Hero.module.scss";
-import Image from "next/image";
-import profile from "./../../assets/pic.jpg";
-import { motion } from "framer-motion";
-import { FaEnvelopeOpenText, FaTelegramPlane } from "react-icons/fa";
-import Link from "next/link";
+'use client';
+import React from 'react';
+import styles from './Hero.module.scss';
+import Image from 'next/image';
+import profile from './../../assets/pic.jpg';
+import { motion } from 'framer-motion';
+import { FaEnvelopeOpenText, FaTelegramPlane } from 'react-icons/fa';
+import Link from 'next/link';
 
 const title = {
   initial: {
@@ -37,12 +37,7 @@ const word = {
 const Hero = () => {
   return (
     <div className={styles.hero}>
-      <motion.div
-        className={styles.heading}
-        variants={title}
-        initial="initial"
-        animate="animate"
-      >
+      <motion.div className={styles.heading} variants={title} initial="initial" animate="animate">
         <motion.h1 variants={word} className={styles.heading1}>
           HI 👋,
         </motion.h1>
@@ -56,10 +51,10 @@ const Hero = () => {
           <Link href="/contact">
             <div
               className={`
-            bg-[--button-bg]
-            font-bold py-3 px-6 rounded-full shadow-lg shadow-neutral-950
-            text-white transform transition-all duration-500 ease-in-out 
-            scale-110 brightness-110 animate-pulse ${styles.cta}`}
+            scale-110
+            transform animate-pulse rounded-full bg-[--button-bg] px-6 py-3
+            font-bold text-white shadow-lg shadow-neutral-950 brightness-110 
+            transition-all duration-500 ease-in-out ${styles.cta}`}
             >
               <FaTelegramPlane className={styles.ctaSvg} />
               <span className={styles.ctaText}>Contact</span>
@@ -68,10 +63,10 @@ const Hero = () => {
           <Link href="https://drive.google.com/file/d/1LDVTp8NCVEnMzvr95VZOuY8pG1h7xukm/view?usp=sharing">
             <div
               className={`
-            bg-[--button-bg]
-            font-bold py-3 px-6 rounded-full shadow-lg shadow-neutral-950
-            text-white transform transition-all duration-500 ease-in-out 
-            scale-110 brightness-110 animate-pulse ${styles.cta}`}
+            scale-110
+            transform animate-pulse rounded-full bg-[--button-bg] px-6 py-3
+            font-bold text-white shadow-lg shadow-neutral-950 brightness-110 
+            transition-all duration-500 ease-in-out ${styles.cta}`}
             >
               <FaEnvelopeOpenText className={styles.ctaSvgResume} />
               <span className={styles.ctaText}>Resume</span>
