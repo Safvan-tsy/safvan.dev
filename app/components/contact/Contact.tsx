@@ -1,9 +1,9 @@
-"use client";
-import React, { useState } from "react";
-import { motion } from "framer-motion";
-import { useForm, ValidationError } from "@formspree/react";
-import Loader from "./Loader";
-import Alert from "./Alert";
+'use client';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { useForm, ValidationError } from '@formspree/react';
+import Loader from './Loader';
+import Alert from './Alert';
 
 const title = {
   initial: {
@@ -33,16 +33,16 @@ const word = {
 };
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [state, handleSubmit] = useForm("mvoezpyj");
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [state, handleSubmit] = useForm('mvoezpyj');
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
 
   const validateForm = () => {
     if (!name.trim()) return false;
-    if (!email.trim() || !email.includes("@")) return false;
+    if (!email.trim() || !email.includes('@')) return false;
     if (!message.trim()) return false;
 
     return true;
@@ -58,9 +58,9 @@ const Contact = () => {
     if (validateForm()) {
       setError(false);
       await handleSubmit({ name, email, message }).then(() => {
-        setName("");
-        setEmail("");
-        setMessage("");
+        setName('');
+        setEmail('');
+        setMessage('');
         setSuccess(true);
         removeSuccess();
       });
@@ -74,29 +74,29 @@ const Contact = () => {
       variants={title}
       initial="initial"
       animate="animate"
-      className="w-full mt-2 p-4 mb-4"
+      className="mb-4 mt-2 w-full p-4"
     >
       <motion.div
         variants={word}
-        className="flex w-full justify-start flex-col items-start flex-wrap "
+        className="flex w-full flex-col flex-wrap items-start justify-start "
       >
         <h2
-          className="text-gray-100 text-xl font-inter tracking-wide
+          className="font-inter text-xl tracking-wide text-gray-100
             md:text-2xl xl:text-3xl"
         >
           Send Message
         </h2>
       </motion.div>
 
-      <div className="mt-2 lg:mt-4 grid grid-cols-1">
+      <div className="mt-2 grid grid-cols-1 lg:mt-4">
         <motion.div variants={word} className="lg:grid lg:grid-cols-2 lg:gap-4">
           <input
             placeholder="Name"
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="outline-none text-slate-400 rounded-md p-3 bg-[--input-bg]
-              my-2 w-full"
+            className="my-2 w-full rounded-md bg-[--input-bg] p-3
+              text-slate-400 outline-none"
           />
           <input
             placeholder="Email"
@@ -105,8 +105,8 @@ const Contact = () => {
             name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="outline-none text-slate-400 rounded-md p-3 bg-[--input-bg]
-                my-2 w-full"
+            className="my-2 w-full rounded-md bg-[--input-bg] p-3
+                text-slate-400 outline-none"
           />
         </motion.div>
         <motion.div variants={word} className="">
@@ -116,14 +116,14 @@ const Contact = () => {
             name="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="bg-[--input-bg] text-slate-400 h-[10rem] placeholder:text-slate-600 
-              placeholder:opacity-50 outline-block p-3 outline-none rounded-md
-              my-2 w-full"
+            className="outline-block my-2 h-[10rem] w-full 
+              rounded-md bg-[--input-bg] p-3 text-slate-400 outline-none
+              placeholder:text-slate-600 placeholder:opacity-50"
           />
         </motion.div>
         <motion.div
           variants={word}
-          className="flex justify-center flex-col items-center flex-wrap gap-2"
+          className="flex flex-col flex-wrap items-center justify-center gap-2"
         >
           {error && <Alert type="Danger" text="Please provide all fields" />}
           {state.submitting ? (
@@ -131,8 +131,8 @@ const Contact = () => {
           ) : (
             <button
               onClick={submitMessage}
-              className="cursor-pointer items-center p-2 my-2 rounded-md 
-          w-full active:translate-y-1 bg-gray-500 font-semibold tracking-wide"
+              className="my-2 w-full cursor-pointer items-center rounded-md 
+          bg-gray-500 p-2 font-semibold tracking-wide active:translate-y-1"
               disabled={state.submitting}
             >
               Submit

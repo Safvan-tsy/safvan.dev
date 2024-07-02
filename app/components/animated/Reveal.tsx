@@ -1,12 +1,7 @@
-"use client";
+'use client';
 
-import {
-  motion,
-  useInView,
-  useAnimationControls,
-  AnimatePresence,
-} from "framer-motion";
-import { ReactNode, useEffect, useRef } from "react";
+import { motion, useInView, useAnimationControls, AnimatePresence } from 'framer-motion';
+import { ReactNode, useEffect, useRef } from 'react';
 
 const defaultVariants = {
   hidden: { y: 100, opacity: 0 },
@@ -28,22 +23,22 @@ const fromRight = {
   visible: { opacity: 1, x: 0 },
 };
 
-type StyledVariantsProps = "top" | "left" | "bottom" | "right";
+type StyledVariantsProps = 'top' | 'left' | 'bottom' | 'right';
 
 const getVariants = (styledVariants: StyledVariantsProps) => {
   let variantsObj;
 
   switch (styledVariants) {
-    case "top":
+    case 'top':
       variantsObj = defaultVariants;
       break;
-    case "right":
+    case 'right':
       variantsObj = fromRight;
       break;
-    case "bottom":
+    case 'bottom':
       variantsObj = fromBottom;
       break;
-    case "left":
+    case 'left':
       variantsObj = fromLeft;
       break;
     default:
@@ -59,11 +54,7 @@ type Props = {
   variants?: StyledVariantsProps;
   margin?: string;
 };
-export const Reveal = ({
-  children,
-  variants = "top",
-  margin = "0px 0px 0px 0px",
-}: Props) => {
+export const Reveal = ({ children, variants = 'top', margin = '0px 0px 0px 0px' }: Props) => {
   const ref = useRef(null);
 
   const isInView = useInView(ref, {
@@ -72,7 +63,7 @@ export const Reveal = ({
   const mainControls = useAnimationControls();
 
   useEffect(() => {
-    isInView ? mainControls.start("visible") : mainControls.start("hidden");
+    isInView ? mainControls.start('visible') : mainControls.start('hidden');
   }, [isInView, mainControls]);
 
   return (
@@ -83,7 +74,7 @@ export const Reveal = ({
           initial="hidden"
           exit="hidden"
           animate={mainControls}
-          transition={{ ease: "easeOut", duration: 1.5 }}
+          transition={{ ease: 'easeOut', duration: 1.5 }}
         >
           {children}
         </motion.div>

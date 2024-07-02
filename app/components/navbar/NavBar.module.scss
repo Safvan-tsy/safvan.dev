@@ -1,118 +1,119 @@
 .nav {
-    position: fixed;
-    z-index: 50;
-    background-color: var(--component-background);
-    transition: 0.5s;
-    display: flex;
-    border-radius: 3rem;
-    right: 1.4rem;
-    left: auto;
-    top: 50%; 
-    transform: translateY(-50%); 
+  position: fixed;
+  z-index: 50;
+  background-color: var(--component-background);
+  transition: 0.5s;
+  display: flex;
+  border-radius: 3rem;
+  right: 1.4rem;
+  left: auto;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .img {
-    width: 2rem;
-    height: 2rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 0.4rem;
-    gap: 1rem;
-    margin: 1rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0.4rem;
+  gap: 1rem;
+  margin: 1rem 0 1rem 0;
 }
 
 .listItem {
-    padding: 0.4rem;
-    border-radius: 100%;
-    background-color: var(--default-font-color);
-    color: var(--background-black);
-    box-shadow: inset 2px 5px 10px #05050530;
+  padding: 0.4rem;
+  border-radius: 100%;
+  background-color: var(--default-font-color);
+  color: var(--background-black);
+  box-shadow: inset 2px 5px 10px #05050530;
 
-    &:hover {
-        transform: translateY(-2px) translateX(-1px);
-        box-shadow: 1px 2.5px 0 0 black;
-        cursor: pointer;
-    }
-
-
+  &:hover {
+    transform: translateY(-2px) translateX(-1px);
+    box-shadow: 1px 2.5px 0 0 black;
+    cursor: pointer;
+  }
 }
 .tooltip {
-    position: relative;
+  position: relative;
 }
 
 .tooltip:hover .tooltip_container {
-    visibility: visible;
-    opacity: 1;
-    width: 4.9rem;
-    transform: translateX(-50%) translateY(-50%);
+  visibility: visible;
+  opacity: 1;
+  width: 4.9rem;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .tooltip_container {
-    position: absolute;
-    top: 50%;
-    right: 0.2rem; 
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 0.2rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .tooltip_container:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: -10px; 
-    transform: translateY(-50%);
-    border: 8px solid transparent;
-    border-right-color: rgb(44, 44, 45); 
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+  border: 8px solid transparent;
+  border-right-color: rgb(44, 44, 45);
 }
 
 .tooltip_text {
-    background: rgb(44, 44, 45);
-    border-radius: 3px;
-    padding: 4px;
-    display: flex;
-    justify-content: center;
-    color: white;
-    position: relative;
-    z-index: 1;
+  background: rgb(44, 44, 45);
+  border-radius: 3px;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  position: relative;
+  z-index: 1;
 }
-@media (max-width: 1536px) {}
+@media (max-width: 1536px) {
+}
 
-@media (max-width: 1280px) {}
+@media (max-width: 1280px) {
+}
 
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+}
 
 @media (max-width: 768px) {
+  .nav {
+    align-self: center;
+    bottom: 1%;
+    top: auto;
+    left: auto;
+    right: auto;
+    transform: none;
+  }
 
-    .nav {
-        align-self: center;
-        bottom: 1%;
-        top: auto;
-        left: auto;
-        right: auto;
-        transform: none;
-    }
+  .list {
+    flex-direction: row-reverse;
+    padding: 0.3rem;
+    gap: 1rem;
+    margin: 0 1rem 0 1rem;
+  }
 
-    .list {
-        flex-direction: row-reverse;
-        padding: 0.3rem;
-        gap: 1rem;
-        margin: 0 1rem 0 1rem;
-    }
+  .listItem {
+    padding: 0.3rem;
+  }
 
-    .listItem {
-        padding: 0.3rem;
-    }
-
-    .tooltip:hover .tooltip_container {
-        display: none;
-    }
+  .tooltip:hover .tooltip_container {
+    display: none;
+  }
 }
 
-@media (max-width: 640px) {}
+@media (max-width: 640px) {
+}

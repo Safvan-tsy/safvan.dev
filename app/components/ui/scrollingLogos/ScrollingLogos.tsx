@@ -1,16 +1,16 @@
-import React from "react";
-import Image from "next/image";
-import sass from "../../../assets/tech/sass.svg";
-import js from "../../../assets/tech/javascript.svg";
-import ts from "../../../assets/tech/typescript.svg";
-import css3 from "../../../assets/tech/css3.svg";
-import html5 from "../../../assets/tech/html.svg";
-import handlebars from "../../../assets/tech/handlebars.svg";
-import bootstrap from "../../../assets/tech/bootstrap.svg";
-import react from "../../../assets/tech/react.svg";
-import redux from "../../../assets/tech/redux.svg";
-import tailwind from "../../../assets/tech/tailwindcss.svg";
-import nextjs from "../../../assets/tech/nextjs.svg";
+import React from 'react';
+import Image from 'next/image';
+import sass from '../../../assets/tech/sass.svg';
+import js from '../../../assets/tech/javascript.svg';
+import ts from '../../../assets/tech/typescript.svg';
+import css3 from '../../../assets/tech/css3.svg';
+import html5 from '../../../assets/tech/html.svg';
+import handlebars from '../../../assets/tech/handlebars.svg';
+import bootstrap from '../../../assets/tech/bootstrap.svg';
+import react from '../../../assets/tech/react.svg';
+import redux from '../../../assets/tech/redux.svg';
+import tailwind from '../../../assets/tech/tailwindcss.svg';
+import nextjs from '../../../assets/tech/nextjs.svg';
 
 const techLogos = [
   tailwind,
@@ -33,19 +33,19 @@ const ScrollingLogos = () => {
         key={index}
         loading="lazy"
         src={logo}
-        className="lg:h-20 lg:w-20 md:h-16 md:w-16 h-10 w-10 max-w-none"
+        className="h-10 w-10 max-w-none md:h-16 md:w-16 lg:h-20 lg:w-20"
         alt={`Image ${index + 1}`}
       />
     ));
   };
 
   return (
-    <div className="flex overflow-hidden lg:space-x-10 sm:space-x-4 group">
-      <div className="flex space-x-4 sm:space-x-6 md:space-x-8 lg:space-x-10 animate-loop-scroll group-hover:paused">
+    <div className="group flex overflow-hidden sm:space-x-4 lg:space-x-10">
+      <div className="group-hover:paused flex animate-loop-scroll space-x-4 sm:space-x-6 md:space-x-8 lg:space-x-10">
         {renderTechLogos()}
       </div>
       <div
-        className="flex space-x-4 sm:space-x-6 md:space-x-8 lg:space-x-10 animate-loop-scroll group-hover:paused"
+        className="group-hover:paused flex animate-loop-scroll space-x-4 sm:space-x-6 md:space-x-8 lg:space-x-10"
         aria-hidden="true"
       >
         {renderTechLogos()}
