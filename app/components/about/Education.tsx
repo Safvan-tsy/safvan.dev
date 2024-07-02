@@ -37,9 +37,9 @@ const Education = () => {
                   Applied diverse coding languages—C, Java, Python, and .NET—in projects,
                   strengthening proficiency in these versatile tools.
                 </li>
-                {/* <li className='py-1 list-disc'>
-                  Achieved a commendable 75.7% CGPA, reflecting mastery in foundational software development and computer science.
-                </li> */}
+                <li className='py-1 list-disc'>
+                  Completed with a commendable CGPA percentage of 75.7%, reflecting mastery in foundational software development and computer science.
+                </li>
               </ul>
             </div>
           </div>

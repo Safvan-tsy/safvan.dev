@@ -73,8 +73,7 @@ const Experience = () => {
                 <li className="py-1 list-disc">
                   Designed and developed authentication and authorization
                   systems, including Role-Based Access Control (RBAC) and
-                  Isomorphic Authorization, to ensure secure and efficient user
-                  management
+                  Isomorphic Authorization, enhancing system security and user management.
                 </li>
                 <li className="py-1 list-disc">
                   Created and maintained RESTful API services, enabling seamless
