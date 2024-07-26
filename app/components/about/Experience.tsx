@@ -20,7 +20,7 @@ const Experience = () => {
             <div className="md:w-[30%]">
               <div>
                 <h2 className="text-bold tracking-wider">Unfold Solution</h2>
-                <p className="text-sm text-gray-400">1 yr 6 mo</p>
+                <p className="text-sm text-gray-400">1 yr 7 mo</p>
                 <p className="text-sm text-gray-400">Remote - Melbourne, Australia</p>
               </div>
               <div className="p-4">
@@ -31,7 +31,7 @@ const Experience = () => {
                     </span>
                     <div>
                       <h3>Software Engineer</h3>
-                      <span className="text-sm text-gray-400">Dec 2023 - Present</span>
+                      <span className="text-sm text-gray-400">Dec 2023 - July 2024</span>
                     </div>
                   </li>
                   <li className="mt-2">
